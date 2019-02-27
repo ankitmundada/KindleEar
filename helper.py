@@ -124,17 +124,11 @@ def RemoveChineseBooks(ke_dir):
                 #    pass
     
 def Main():
-    #Searching for KindleEar folder
-    ke_dir = os.path.join(os.path.dirname(__file__), KE_DIR)
-    kem_dir = os.path.join(os.path.dirname(__file__), KE_MASTER_DIR)
-    kemm_dir = os.path.join(kem_dir, KE_MASTER_DIR)
-    keup_dir = os.path.join(os.path.dirname(__file__), '..', KE_DIR)
-    dirs = list(filter(os.path.exists, (ke_dir, kemm_dir, kem_dir, keup_dir)))
-    if not dirs:
+    ke_dir = os.path.dirname(os.path.abspath(__file__))
+    if not os.path.exists(ke_dir):
         print("Cant found folder 'KindleEar'! Please download it from github firstly.")
         return 1
     
-    ke_dir = dirs[0]
     custom_file = os.path.join(os.path.dirname(__file__), CUSTOM_FILE) #file for saving your custom info
     app_yaml = os.path.join(ke_dir, 'app.yaml')
     work_yaml = os.path.join(ke_dir, 'module-worker.yaml')
