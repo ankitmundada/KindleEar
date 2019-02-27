@@ -1,4 +1,5 @@
 *.pyc
+*.bkp
 .DS_Store
 Correio.py
 oGlobo.py
