@@ -6,5 +6,5 @@ cron:
 - description: remove old logs
   url: /removelogs
   schedule: every day 03:00
-  timezone: Asia/Shanghai
+  timezone: Asia/Kolkata
   

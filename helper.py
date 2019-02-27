@@ -264,7 +264,8 @@ def Main():
         with codecs.open(cfg_file, 'w', 'utf-8') as fcfg:
             fcfg.write('\n'.join(slcfg))
     
-    RemoveChineseBooks(ke_dir)
+    # Disabling Chinese Books Removing, as already removed
+    #RemoveChineseBooks(ke_dir)
     
     return 0
     
