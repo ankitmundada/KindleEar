@@ -18,15 +18,18 @@ class Readings(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Editorials', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss'),
+        ('Editorials', 'https://www.thehindu.com/opinion/feeder/default.rss'),
         ('Editorials', 'https://indianexpress.com/section/opinion/editorials/feed/'),
         ('Editorials', 'http://rss.jagran.com/rss/editorial/nazariya.xml'),
-        ('Startups', 'https://inc42.com/features/feed'),
-        ('Startups', 'https://yourstory.com/category/ys-in-depth/feed'),
+        ('Editorials', 'https://www.orfonline.org/content-type/commentary/feed/'),
+        ('Biz', 'https://inc42.com/features/feed'),
+        ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
+        ('Biz', 'http://feeds.hbr.org/harvardbusiness'),
         ('AI', 'https://blog.openai.com/rss/'),
         ('AI', 'http://aiweekly.co/issues.rss'),
         ('AI', 'https://distill.pub/rss.xml'),
         ('AI', 'https://www.aitrends.com/category/features/feed/'),
         ('AI', 'https://blogs.nvidia.com/blog/category/deep-learning/feed/'),
+        ('From Pocket', 'https://getpocket.com/users/*sso1406313901115562/feed/unread'),
         ]
     
