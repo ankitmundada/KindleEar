@@ -18,14 +18,13 @@ class Readings(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Editorials', 'https://www.thehindu.com/opinion/feeder/default.rss'),
+        ('Editorials', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss'),
+        ('Editorials', 'https://www.thehindu.com/opinion/lead/feeder/default.rss'),
+        ('Editorials', 'https://www.thehindu.com/opinion/interview/feeder/default.rss'),
         ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True),
         ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True),
         ('Editorials', 'https://indianexpress.com/section/opinion/editorials/feed/'),
-        ('Editorials', 'https://www.orfonline.org/content-type/commentary/feed/'),
-        ('Editorials', 'https://navbharattimes.indiatimes.com/opinions/rssfeedsection/2279782.cms'),
         ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
-        ('Biz', 'https://yourstory.com/category/funding-investments/feed'),
         ('Biz', 'http://feeds.feedburner.com/hbr/KsRB'),
         ('AI', 'https://blog.openai.com/rss/'),
         ('AI', 'https://distill.pub/rss.xml'),
@@ -39,10 +38,13 @@ class Readings(BaseFeedBook):
         ('AI', 'https://chatbotslife.com/feed'),
         ('AI', 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml'),
         ('Curious?', 'http://nautil.us/rss/all'),
-        ('Bookmarked', 'https://getpocket.com/users/*sso1406313901115562/feed/unread'),
+        ('Bookmarked', 'https://www.instapaper.com/rss/6974367/jcrQql6U6UgcuGZVa6uXVs2OVYU'),
         # ('Biz', 'https://inc42.com/features/feed'),
         # ('Biz', 'https://inc42.com/startups/feed'),
+        # ('Biz', 'https://yourstory.com/category/funding-investments/feed'), # infrequent
         # ('AI', 'http://aiweekly.co/issues.rss'), # AI Weekly (Doesn't work as expected)
+        # ('Editorials', 'https://www.orfonline.org/content-type/commentary/feed/'), # Too long
         # ('Editorials', 'http://rss.jagran.com/rss/editorial/nazariya.xml'), # Dianik Jagaran (Not so good)
+        # ('Editorials', 'https://navbharattimes.indiatimes.com/opinions/rssfeedsection/2279782.cms'),
         ]
     
