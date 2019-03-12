@@ -24,8 +24,6 @@ class Readings(BaseFeedBook):
         ('Editorials', 'https://indianexpress.com/section/opinion/editorials/feed/'),
         ('Editorials', 'https://www.orfonline.org/content-type/commentary/feed/'),
         ('Editorials', 'https://navbharattimes.indiatimes.com/opinions/rssfeedsection/2279782.cms'),
-        ('Biz', 'https://inc42.com/features/feed'),
-        ('Biz', 'https://inc42.com/startups/feed'),
         ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
         ('Biz', 'https://yourstory.com/category/funding-investments/feed'),
         ('Biz', 'http://feeds.feedburner.com/hbr/KsRB'),
@@ -41,7 +39,9 @@ class Readings(BaseFeedBook):
         ('AI', 'https://chatbotslife.com/feed'),
         ('AI', 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml'),
         ('Curious?', 'http://nautil.us/rss/all'),
-        ('From Pocket', 'https://getpocket.com/users/*sso1406313901115562/feed/unread'),
+        ('Bookmarked', 'https://getpocket.com/users/*sso1406313901115562/feed/unread'),
+        # ('Biz', 'https://inc42.com/features/feed'),
+        # ('Biz', 'https://inc42.com/startups/feed'),
         # ('AI', 'http://aiweekly.co/issues.rss'), # AI Weekly (Doesn't work as expected)
         # ('Editorials', 'http://rss.jagran.com/rss/editorial/nazariya.xml'), # Dianik Jagaran (Not so good)
         ]
