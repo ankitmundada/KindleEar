@@ -18,25 +18,23 @@ class DailyReadings(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Editorials', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss'),
-        ('Editorials', 'https://www.thehindu.com/opinion/lead/feeder/default.rss'),
-        ('Editorials', 'https://www.thehindu.com/opinion/interview/feeder/default.rss'),
-        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True),
-        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True),
+        ('Editorials', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss', 2),
+        ('Editorials', 'https://www.thehindu.com/opinion/lead/feeder/default.rss', 2),
+        ('Editorials', 'https://www.thehindu.com/opinion/interview/feeder/default.rss', 1),
+        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True, 2),
+        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True, 2),
         ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
-        ('Biz', 'http://feeds.feedburner.com/hbr/KsRB'),
-        ('AI', 'https://blog.openai.com/rss/'),
+        ('Biz', 'http://feeds.feedburner.com/hbr/KsRB', 2), # HBR
         ('AI', 'https://distill.pub/rss.xml'),
         ('AI', 'https://www.aitrends.com/category/features/feed/'),
-        ('AI', 'http://feeds.feedburner.com/blogspot/gJZg', True),
-        ('AI', 'https://deepmind.com/blog/feed/basic/'),
         ('AI', 'https://towardsdatascience.com/feed/tagged/deep-learning'),
-        ('AI', 'https://blog.bigml.com/feed/'),
         ('AI', 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml'),
+        ('Short-Story', 'https://americanliterature.com/feed/shortstoryfeed.xml'),
         ('Bookmarked', 'https://www.instapaper.com/rss/6974367/jcrQql6U6UgcuGZVa6uXVs2OVYU'),
         # ('Biz', 'https://inc42.com/features/feed'),
         # ('Biz', 'https://inc42.com/startups/feed'),
         # ('Biz', 'https://yourstory.com/category/funding-investments/feed'), # infrequent
+        # ('AI', 'https://blog.bigml.com/feed/'), # Not DL Focused
         # ('AI', 'https://blogs.nvidia.com/blog/category/deep-learning/feed/'), # Mostly Promotional
         # ('AI', 'http://aiweekly.co/issues.rss'), # AI Weekly (Doesn't work as expected)
         # ('AI', 'https://chatbotslife.com/feed'),

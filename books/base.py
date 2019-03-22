@@ -259,7 +259,23 @@ class BaseFeedBook:
         
         for feed in self.feeds:
             section, url = feed[0], feed[1]
-            isfulltext = feed[2] if len(feed) > 2 else False
+            # Original1 Start
+            # isfulltext = feed[2] if len(feed) > 2 else False
+            # Original1 End
+
+            ## Custom1 Start
+            isfulltext = False
+            num_articles = self.max_articles_per_feed
+            if len(feed) > 3:
+                isfulltext = feed[2]
+                num_articles = feed[3]
+            elif len(feed) == 3:
+                if isinstance(feed[2], bool):
+                    isfulltext = feed[2]
+                elif isinstance(feed[2], int):
+                    num_aricles = feed[2]
+            ## Custom1 End
+
             timeout = self.timeout+10 if isfulltext else self.timeout
             opener = URLOpener(self.host, timeout=timeout, headers=self.extra_header)
             result = opener.open(url)
@@ -270,7 +286,13 @@ class BaseFeedBook:
                 
                 feed = feedparser.parse(content)
                 
-                for e in feed['entries'][:self.max_articles_per_feed]:
+                # Original1 Start
+                # for e in feed['entries'][:self.max_articles_per_feed]:
+                # Original1 End
+
+                ## Custom1 Start
+                for e in feed['entries'][:num_articles]:
+                    ## Custom1 End
                     updated = None
                     if hasattr(e, 'updated_parsed') and e.updated_parsed:
                         updated = e.updated_parsed
