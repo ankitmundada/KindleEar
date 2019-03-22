@@ -12,7 +12,7 @@ class DailyReadings(BaseFeedBook):
     language              = 'en'
     feed_encoding         = "utf-8"
     page_encoding         = "utf-8"
-    max_articles_per_feed = 3
+    max_articles_per_feed = 15
     coverfile             = "cv_the_daily_journal.jpg"
     oldest_article        = 1
     
