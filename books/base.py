@@ -273,7 +273,7 @@ class BaseFeedBook:
                 if isinstance(feed[2], bool):
                     isfulltext = feed[2]
                 elif isinstance(feed[2], int):
-                    num_aricles = feed[2]
+                    num_articles = feed[2]
             ## Custom1 End
 
             timeout = self.timeout+10 if isfulltext else self.timeout
