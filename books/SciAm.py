@@ -13,6 +13,8 @@ class SciAm(BaseFeedBook):
     feed_encoding         = "utf-8"
     page_encoding         = "utf-8"
     coverfile             = "cv_sciam.jpg"
+    max_articles_per_feed = 30
+    oldest_article        = 7
     deliver_days          = ['Friday']
     
     remove_classes = ['ec-messages',]
