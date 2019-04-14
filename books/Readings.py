@@ -24,7 +24,7 @@ class DailyReadings(BaseFeedBook):
         ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True, 2),
         ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True, 2),
         ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
-        ('Biz', 'http://feeds.feedburner.com/hbr/KsRB', 2), # HBR
+        ('Biz', 'http://feeds.feedburner.com/hbrLatest', 2), # HBR
         ('AI', 'https://distill.pub/rss.xml'),
         ('AI', 'https://www.aitrends.com/category/features/feed/'),
         ('AI', 'https://towardsdatascience.com/feed/tagged/deep-learning'),
