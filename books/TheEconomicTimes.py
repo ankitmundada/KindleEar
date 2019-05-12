@@ -15,7 +15,7 @@ class TheEconomicTimes(BaseFeedBook):
     max_articles_per_feed = 3
     coverfile             = "cv_economic_times.jpg"
     oldest_article        = 1
-    deliver_days          = ['Friday']
+    deliver_days          = ['Sunday']
     
     remove_classes = ['ec-messages',]
     feeds = [

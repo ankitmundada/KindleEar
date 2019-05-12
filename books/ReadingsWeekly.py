@@ -23,6 +23,7 @@ class ReadingsWeekly(BaseFeedBook):
         ('Google AI Blog', 'http://feeds.feedburner.com/blogspot/gJZg', True), # Google AI
         ('DeepMind AI Blog', 'https://deepmind.com/blog/feed/basic/'),
         ('Open AI Blog', 'https://blog.openai.com/rss/'),
+        ('Distill', 'https://distill.pub/rss.xml'),
         ('Instapaper-D', 'https://www.instapaper.com/rss/7044488/et9bBlTZ56Mj5c23OdfoefH34cw'),
         ]
     
