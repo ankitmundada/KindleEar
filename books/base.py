@@ -1176,7 +1176,8 @@ class WebpageBook(BaseFeedBook):
         """
         decoder = AutoDecoder(isfeed=False)
         timeout = self.timeout
-        for section, url in self.feeds:
+        for feed in self.feeds:
+            section, url = feed[0], feed[1]
             opener = URLOpener(self.host, timeout=timeout, headers=self.extra_header)
             result = opener.open(url)
             status_code, content = result.status_code, result.content

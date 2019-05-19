@@ -19,11 +19,12 @@ class ReadingsWeekly(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Nautilus', 'http://nautil.us/rss/all'),
-        ('Google AI Blog', 'http://feeds.feedburner.com/blogspot/gJZg', True), # Google AI
-        ('DeepMind AI Blog', 'https://deepmind.com/blog/feed/basic/'),
-        ('Open AI Blog', 'https://blog.openai.com/rss/'),
-        ('Distill', 'https://distill.pub/rss.xml'),
+        ('ThoughtProvoking', 'http://nautil.us/rss/all'),
+        ('AI', 'http://feeds.feedburner.com/blogspot/gJZg', True), # Google AI
+        ('AI', 'https://deepmind.com/blog/feed/basic/'),
+        ('AI', 'https://blog.openai.com/rss/'),
+        ('AI', 'https://distill.pub/rss.xml'),
+        ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
         ('Instapaper-D', 'https://www.instapaper.com/rss/7044488/et9bBlTZ56Mj5c23OdfoefH34cw'),
         ]
     
