@@ -21,10 +21,11 @@ class ReadingsWeekly(BaseFeedBook):
     feeds = [
         ('ThoughtProvoking', 'http://nautil.us/rss/all'),
         ('AI', 'http://feeds.feedburner.com/blogspot/gJZg', True), # Google AI
-        ('AI', 'https://deepmind.com/blog/feed/basic/'),
-        ('AI', 'https://blog.openai.com/rss/'),
-        ('AI', 'https://distill.pub/rss.xml'),
         ('Biz', 'https://yourstory.com/category/ys-in-depth/feed'),
+        ('Open Page', 'https://www.thehindu.com/opinion/open-page/feeder/default.rss'),
         ('Instapaper-D', 'https://www.instapaper.com/rss/7044488/et9bBlTZ56Mj5c23OdfoefH34cw'),
+        #('AI', 'https://deepmind.com/blog/feed/basic/'),
+        #('AI', 'https://blog.openai.com/rss/'),
+        #('AI', 'https://distill.pub/rss.xml'),
         ]
     

@@ -18,13 +18,16 @@ class DailyReadings(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Editorials', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss', 2),
-        ('Editorials', 'https://www.thehindu.com/opinion/lead/feeder/default.rss', 2),
-        ('Editorials', 'https://www.thehindu.com/opinion/interview/feeder/default.rss', 1),
-        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True, 2),
-        ('Editorials', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True, 2),
+        ('News', 'https://www.thehindu.com/opinion/cartoon/feeder/default.rss', 1),
+        ('News', 'https://www.thehindu.com/opinion/editorial/feeder/default.rss', 1),
+        #('News', 'https://www.thehindu.com/opinion/lead/feeder/default.rss', 1),
+        ('News', 'https://www.thehindu.com/opinion/interview/feeder/default.rss', 1),
+        ('News', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=187&mid=70', True, 1),
+        ('News', 'https://www.tribuneindia.com/rss/feed.aspx?cat_id=34&mid=70', True, 1),
+        ('Biz', 'https://yourstory.com/category/ys-startup/feed'),
         ('Biz', 'https://yourstory.com/category/daily-capsule/feed'),
-        ('Biz', 'http://feeds.feedburner.com/hbrLatest', 3), # HBR
+        #('Biz', 'http://feeds.feedburner.com/hbrLatest', 3), # HBR
+        ('Biz', 'http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fhbr.org%2F&in_id_or_class=&url_contains=&item=ul+.hero-featured-items+li'), # HBR
         ('AI', 'https://towardsdatascience.com/feed/tagged/deep-learning', 1),
         ('AI', 'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml'),
         ('Short-Story', 'https://americanliterature.com/feed/shortstoryfeed.xml'),
