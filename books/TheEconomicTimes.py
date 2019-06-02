@@ -19,7 +19,7 @@ class TheEconomicTimes(BaseFeedBook):
     
     remove_classes = ['ec-messages',]
     feeds = [
-        ('Magazine','https://rss.app/feeds/3SNhRqw5oUEe8ZWb.xml')
+        ('Magazine','https://rss.app/feeds/3SNhRqw5oUEe8ZWb.xml'),
         ('Opinion','https://economictimes.indiatimes.com/opinion/rssfeeds/897228639.cms'),
         ]
     
